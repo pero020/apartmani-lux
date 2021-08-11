@@ -6,6 +6,7 @@
   background-image: url("images/background-mobile.jpg");
   background-size: cover;
   filter: blur(5px);
+  transform: scale(1.02);
 }
 .bg-white-layer {
   background-color: white;
