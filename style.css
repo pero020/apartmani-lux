@@ -1,3 +1,5 @@
+
+
 .bg-image {
   position: fixed;
   z-index: -1;
@@ -20,6 +22,18 @@
 .navbar {
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1.2em;
+}
+
+#home-section {
+  height: 25vh;
+  width: 100vw;
+  margin-top: 30vh;
+}
+
+.welcome-h1 {
+  position: relative;
+  text-align: center;
+  top: 9.5vh;
 }
 
 @media only screen and (orientation: landscape) {
