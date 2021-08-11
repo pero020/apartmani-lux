@@ -13,8 +13,13 @@
   opacity: 0.8
 }
 
+.navbar-brand {
+  font-size: 1.2em;
+}
+
 .navbar {
-  padding: 1em 1em 0.5em 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 1.2em;
 }
 
 @media only screen and (orientation: landscape) {
