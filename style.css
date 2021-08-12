@@ -1,4 +1,6 @@
-
+body {
+  overflow-x: hidden;
+}
 
 .bg-image {
   position: fixed;
@@ -11,8 +13,7 @@
   transform: scale(1.02);
 }
 .bg-white-layer {
-  background-color: white;
-  opacity: 0.8;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .navbar-brand {
@@ -34,6 +35,38 @@
   position: relative;
   text-align: center;
   top: 9.5vh;
+}
+
+#gallery-section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 50vh;
+}
+
+.gallery-h1 {
+  padding-top: 9.5vh;
+  padding-bottom: 9.5vh;
+  display: block;
+  text-align: center;
+}
+
+.gallery-container-master {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-img {
+  width: 80vw;
+  margin-bottom: 9.5vh;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+}
+
+#pricing-section {
+  margin-top: 50vh
 }
 
 @media only screen and (orientation: landscape) {
