@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
   overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .bg-image {
@@ -10,7 +13,7 @@ body {
   background-image: url("images/background-mobile.jpg");
   background-size: cover;
   filter: blur(5px);
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 .bg-white-layer {
   background-color: rgba(255,255,255,0.8);
@@ -58,7 +61,7 @@ body {
 }
 
 .gallery-img {
-  width: 80vw;
+  width: min(80vw, 720px);
   margin-bottom: 9.5vh;
   border-style: solid;
   border-width: 10px;
@@ -69,8 +72,44 @@ body {
   margin-top: 50vh
 }
 
+.pricing-h1 {
+  padding-top: 9.5vh;
+  padding-bottom: 9.5vh;
+  display: block;
+  text-align: center;
+}
+
+.price-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.price-card {
+  margin: auto 15vw 10vh 15vw;
+  background-color: rgba(255,255,255,1);
+  border-style: solid;
+  border-color: black;
+  padding: 4.5vw;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.price-h2 {
+
+}
+
+
 @media only screen and (orientation: landscape) {
   .bg-image {
     background-image: url("images/background.jpg");
+  }
+
+  .price-cards-container {
+    flex-direction: row;
+  }
+
+  .price-card {
+    margin: auto auto 10vh;
   }
 }
