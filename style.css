@@ -82,7 +82,6 @@ body {
 .price-cards-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .price-card {
@@ -90,15 +89,46 @@ body {
   background-color: rgba(255,255,255,1);
   border-style: solid;
   border-color: black;
-  padding: 4.5vw;
+  padding: 4vh;
   border-radius: 25px;
   text-align: center;
 }
 
-.price-h2 {
-
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 50vh;
 }
 
+.contact-h1 {
+  padding-top: 9.5vh;
+  padding-bottom: 4vh;
+  display: block;
+  text-align: center;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.booking-img {
+  width: 45vw;
+  padding: 5vw;
+}
+
+.airbnb-img {
+  width: 40vw;
+  padding: 5vw;
+}
+
+.gmail-img {
+  width: 30vw;
+  padding: 5vw;
+}
 
 @media only screen and (orientation: landscape) {
   .bg-image {
@@ -107,9 +137,30 @@ body {
 
   .price-cards-container {
     flex-direction: row;
+    justify-content: center;
   }
 
   .price-card {
-    margin: auto auto 10vh;
+    margin: auto auto 20vh auto;
   }
+
+  .contacts-container {
+    flex-direction: row;
+  }
+
+  .booking-img {
+    width: 25vw;
+    padding: 5vw;
+  }
+  
+  .airbnb-img {
+    width: 25vw;
+    padding: 5vw;
+  }
+  
+  .gmail-img {
+    width: 20vw;
+    padding: 5vw;
+  }
+
 }
